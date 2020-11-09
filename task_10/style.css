@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+/*.wrapper {*/
+/*    width: fit-content;*/
+/*    position: absolute;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    top: 0;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    display: flex;*/
+/*}*/
+
+.slider {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 290px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    background-color: grey;
+    overflow: hidden;
+    /*display: flex;*/
+}
+
+.slider-item {
+    /*width: fit-content;*/
+    /*transition: opacity 1s ease-in;*/
+    /*opacity: 0;*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    display: flex;
+}
+
+.slider-track {
+    /*overflow: hidden;*/
+    display: flex;
+    transition: .5s;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    /*background-color: transparent;*/
+    /*border: none;*/
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    padding: 0;
+    z-index: 1;
+}
+
+.slider-button-prev {
+    content: url("images/icons/arrow_left.png");
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.slider-button-next {
+    content: url("images/icons/arrow_right.png");
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+.dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+}
+
+.slider-dots-item {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fffcfc;
+    opacity: 0.5;
+    cursor: pointer;
+    margin-right: 5px;
+    color: transparent;
+}
+
+.active {
+    background-color: orangered;
+}
+
+
+/*@keyframes fade {*/
+/*    from {*/
+/*        opacity: 0*/
+/*    }*/
+/*    to {*/
+/*        opacity: 1*/
+/*    }*/
+/*}*/
+
+/*@keyframes mover {*/
+/*    0% { transform: translateX(0); }*/
+/*    100% { transform: translateX(290px); }*/
+/*}*/
+/*fadeIn/fadeOut.*/
+/*animation: mover 2s ease-in-out forwards;*/
+/*example*/
+
+/*body {*/
+/*    padding: 10px;*/
+/*}*/
+
+/*.carousel {*/
+/*    position: relative;*/
+/*    width: 398px;*/
+/*    padding: 10px 40px;*/
+/*    border: 1px solid #CCC;*/
+/*    border-radius: 15px;*/
+/*    background: #eee;*/
+/*}*/
+
+/*.carousel img {*/
+/*    width: 130px;*/
+/*    height: 130px;*/
+/*    !* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок *!*/
+/*    display: block;*/
+/*}*/
+
+/*.arrow {*/
+/*    position: absolute;*/
+/*    top: 60px;*/
+/*    padding: 0;*/
+/*    background: #ddd;*/
+/*    border-radius: 15px;*/
+/*    border: 1px solid gray;*/
+/*    font-size: 24px;*/
+/*    line-height: 24px;*/
+/*    color: #444;*/
+/*    display: block;*/
+/*}*/
+
+/*.arrow:focus {*/
+/*    outline: none;*/
+/*}*/
+
+/*.arrow:hover {*/
+/*    background: #ccc;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.prev {*/
+/*    left: 7px;*/
+/*}*/
+
+/*.next {*/
+/*    right: 7px;*/
+/*}*/
+
+/*.gallery {*/
+/*    width: 390px;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.gallery ul {*/
+/*    height: 130px;*/
+/*    width: 9999px;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    list-style: none;*/
+/*    transition: margin-left 250ms;*/
+/*    !* удаляем пустое пространство между элементами li, у которых установлен inline-block *!*/
+/*    font-size: 0;*/
+/*}*/
+
+/*.gallery li {*/
+/*    display: inline-block;*/
+/*}*/
+/**!*/
